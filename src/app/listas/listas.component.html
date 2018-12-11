@@ -1,0 +1,32 @@
+
+<table class="table">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">Juego</th>
+        <th scope="col">Ejercito / Banda</th>
+        <th scope="col">Puntos</th>
+        <th scope="col">Nombre</th>
+        <th scope="col">Jugador</th>
+        <th scope="col">Lista</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let publicalista of publicalista">
+        <th scope="row">{{publicalista.juego}}</th>
+        <td >{{publicalista.ejercito}}</td>
+        <td >{{publicalista.puntos}}</td>
+        <td >{{publicalista.nombre}}</td>
+        <td >{{publicalista.jugador}}</td>
+        <td >{{publicalista.descripcion}}</td>
+        
+        
+        <!--<td ></td> -->
+       <!-- <a class="nav-link" routerLink="/vistalistas">Ver</a> --> 
+      </tr>
+    </tbody>
+    
+  </table>
+  <button type="button" routerLink="/publicalista" class="btn btn-secondary btn-lg btn-block">Añadir Lista</button>
+  
+  
+ 

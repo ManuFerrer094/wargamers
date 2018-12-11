@@ -1,0 +1,21 @@
+<div class = "container" id="fondoregistro">
+    <div class="row" id="fondoregistro">
+        <div class="col-md-4 offset-4 col-md-4"   style="padding-top:5%">
+          <div class="well">  
+              <input type="text" placeholder="Nombre" class="form-control" [(ngModel)]="registrojugador.nombre" />  
+              <input type="text" placeholder="Apellidos" class="form-control" [(ngModel)]="registrojugador.apellidos" /> 
+              <input type="text" placeholder="Ciudad" class="form-control" [(ngModel)]="registrojugador.ciudad" />
+              <input type="email" placeholder="Email" class="form-control" [(ngModel)]="registrojugador.email" />
+              <input type="password" placeholder="Contraseña" class="form-control" [(ngModel)]="registrojugador.password" /> 
+              <h4>En la plataforma</h4> 
+              <input type="text" placeholder="¿Como te llamarás?" class="form-control" [(ngModel)]="registrojugador.alias" />  
+              <input type="text" placeholder="¿ Que juegos te interesan?" class="form-control" [(ngModel)]="registrojugador.juegos" />
+              <input type="text" placeholder="¿A que equipo perteneces?" class="form-control" [(ngModel)]="registrojugador.equipo" />
+              <input type="text" placeholder="¿Que ejercitos utilizas?" class="form-control" [(ngModel)]="registrojugador.ejercito" />
+              <a  class="btn btn-primary btn block" routerLink="/jugadores" (click)="guardaregistrojugador()">Registrarse</a>
+              <a routerLink="/homepage" class="btn btn-primary btn block">Cancelar</a>
+          </div>
+        </div>
+    </div>
+    
+</div>

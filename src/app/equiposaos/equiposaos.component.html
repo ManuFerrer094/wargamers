@@ -1,0 +1,24 @@
+<table class="table">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">Equipo</th>
+        <th scope="col">Capitán</th>
+        <th scope="col">Miembros</th>
+        <th scope="col">Ciudad</th>
+        <th scope="col">Victorias</th>
+        <th scope="col">Derrotas</th>
+        <th scope="col">Contacto</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let equipoaos of equiposaos">
+        <th scope="row">{{equipoaos.nombre}}</th>
+        <td >{{equipoaos.capitan}}</td>
+        <td >{{equipoaos.miembros}}</td>
+        <td >{{equipoaos.ciudad}}</td>
+        <td >{{equipoaos.victorias}}</td>
+        <td >{{equipoaos.derrotas}}</td>
+        <td >{{equipoaos.contacto}}</td>
+      </tr>
+    </tbody>
+</table>

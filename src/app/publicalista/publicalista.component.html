@@ -1,0 +1,46 @@
+<div class="input-group mb-3" style="padding-top: 5%" >
+  <div class="input-group-prepend" >
+    <span class="input-group-text" id="basic-addon1">Juego</span>
+  </div>
+  <input type="text" class="form-control" placeholder="¿ Para que juego es la lista ?" aria-label="Username" aria-describedby="basic-addon1" [(ngModel)]="publicalista.juego">
+    <div class="input-group-prepend" >
+      <span class="input-group-text" id="basic-addon1">Ejercito</span>
+    </div>
+    <input type="text" class="form-control" placeholder="¿ Ejercito/Banda ?" aria-label="Username" aria-describedby="basic-addon1" [(ngModel)]="publicalista.ejercito">
+  </div>
+  
+  <div class="input-group mb-3">
+    <input type="text" class="form-control" placeholder="¿ Nombre de la lista ?" aria-label="Recipient's username" aria-describedby="basic-addon2"  [(ngModel)]="publicalista.nombre">
+    <div class="input-group-append">
+      <span class="input-group-text" id="basic-addon2">Nombre de la lista</span>
+    </div>
+  </div>
+  <div class="input-group mb-3">
+      <input type="text" class="form-control" placeholder="escribe aqui tu alias" aria-label="Recipient's username" aria-describedby="basic-addon2"  [(ngModel)]="publicalista.jugador">
+      <div class="input-group-append">
+        <span class="input-group-text" id="basic-addon2">NickName</span>
+      </div>
+    </div>
+  
+  
+  
+  <div class="input-group mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text">Puntos</span>
+    </div>
+    <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)"  [(ngModel)]="publicalista.puntos">
+    <div class="input-group-append">
+      <span class="input-group-text">1500</span>
+    </div>
+  </div>
+  
+  <div class="input-group">
+    <div class="input-group-prepend">
+      <span class="input-group-text">Descripción de la lista</span>
+    </div>
+    <textarea [(ngModel)]="publicalista.descripcion" class="form-control" aria-label="With textarea"></textarea>
+  </div>
+
+  <button type="button" routerLink="/listas" (click)="guardapublicalista()" class="btn btn-secondary btn-lg btn-block">Publicar Lista</button>
+
+  

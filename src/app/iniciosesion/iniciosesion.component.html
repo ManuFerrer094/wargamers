@@ -1,0 +1,31 @@
+<!--<div class = "container" id="fondoiniciosesion" style="padding-top: 5%">
+    <div class="row">
+        <div class="col-md-4 offset-4 col-md-4">
+          <div class="well">
+              <label>Email</label>
+              <input type="email" class="form-control" [(ngModel)]="loginParams.email" />
+              <br />
+              <label>Contraseña</label>
+              <input type="password" class="form-control" [(ngModel)]="loginParams.password" />
+              <a class="btn btn-warning btn-block" routerLink="/homepage" class="btn btn-primary btn block" (click)="login()" style="margin-right: 5%">Entrar</a>
+              <a class="btn btn-primary btn-block" (click)="facebookLogin()">Entrar con Facebook</a>
+              <a class="btn btn-default btn-block" routerLink="/homepage" class="btn btn-primary btn block" >Cancelar</a>
+          </div>
+        </div>
+    </div>
+</div> -->
+    
+
+<!-- -->
+<div class="login" style="padding-bottom: 15%">
+    <div class="well">
+	<h1>Iniciar Sesión</h1>
+    <div class="row" method="post">
+        <input type="email" class="form-control" placeholder="Email" required="required" [(ngModel)]="loginParams.email" />
+        <input type="password" required="required" class="form-control" placeholder="Contraseña"  [(ngModel)]="loginParams.password" />
+        <a type="submit" routerLink="/homepage" (click)="login()" class="btn btn-primary btn-block btn-large">Entrar</a>
+        <a class="btn btn-primary btn-block" (click)="facebookLogin()">Entrar con Facebook</a>
+    </div>
+    </div>
+</div>
+  

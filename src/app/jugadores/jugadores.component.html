@@ -1,0 +1,26 @@
+
+
+    <table class="table">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">Jugador</th>
+            <th scope="col">Juegos</th>
+            <th scope="col">Equipo</th>
+            <th scope="col">Ejercito</th>
+            <th scope="col">Ciudad</th>
+          </tr>
+        </thead>
+        <tbody>
+          
+          <tr *ngFor="let registrojugador of registrojugador">
+              <th scope="row">{{registrojugador.alias}}</th>
+              <td >{{registrojugador.juegos}}</td>
+              <td >{{registrojugador.equipo}}</td>
+              <td >{{registrojugador.ejercito}}</td>
+              <td >{{registrojugador.ciudad}}</td>   
+          </tr>   
+            
+  
+          
+        </tbody>
+    </table>

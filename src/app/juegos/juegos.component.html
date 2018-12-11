@@ -1,0 +1,16 @@
+
+
+<div class="card-group" style="padding-top: 5%">
+  
+    <div  *ngFor="let juego of juegos"class="card">
+      <img class="card-img-top" src="assets/recursos2d/70.jpg" alt="Card image cap">
+      <div  class="card-body">
+        <h5 class="card-title">{{juego.nombre}}</h5>
+        <p class="card-text"> {{juego.descripcion}}</p> 
+      </div>
+      <div  class="btn-group" role="group" aria-label="Basic example">
+          <button     routerLink= "/equipos"type="button"  class="btn btn-secondary">Equipos</button>
+          <button routerLink="/listas"type="button" class="btn btn-secondary">Listas</button>
+      </div>
+    </div>
+    

@@ -1,0 +1,32 @@
+<div class = "container" style="padding-top: 5%">
+    <div class="row">
+        <div class="col-md-4 offset-4 col-md-4">
+          <div class="well">
+                
+                <input type="text" placeholder="Alias" class="form-control" [(ngModel)]="registroequipo.alias" />
+               
+                 
+                 <input type="password" placeholder="Contraseña" class="form-control" [(ngModel)]="registroequipo.contrasena" />
+                 
+              
+              <input type="text" placeholder="Nombre del equipo" class="form-control" [(ngModel)]="registroequipo.equipo" />
+          
+             
+              <input type="text" placeholder="Número de miembros" class="form-control" [(ngModel)]="registroequipo.miembros" />
+             
+             
+              <input type="text" placeholder="Ciudad del equipo" class="form-control" [(ngModel)]="registroequipo.ciudad" />
+             
+              
+              <input type="text" placeholder="Capitán del equipo" class="form-control" [(ngModel)]="registroequipo.capitan" />
+             
+             
+              <input type="email" placeholder="Email del equipo" class="form-control" [(ngModel)]="registroequipo.contacto" />
+            
+              <a class="btn btn-primary btn block"  (click)="guardaregistroequipo()"  routerLink="/equipos" >Registrar Equipo</a>
+              <a routerLink="/homepage" class="btn btn-primary btn block">Cancelar</a>
+          </div>
+        </div>
+    </div>
+    
+</div>
